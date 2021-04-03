@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/bf8d09c733.js" crossorigin="anonymous"></script>    
+  </head>
+  <body>
+    <div class="container">
+      <section class="outside">
+        <form  id="search-form">
+          <div class="mb-3">
+            <input class="form-control"  type="text"  id="write-city" placeholder="CITY" />
+            <span><button type="submit" class="btn">SEARCH</button></span>
+            <input type="submit" class="btn" id="current-location" value="CURRENT LOCATION" />
+          </div>
+        </form>
+        <section class="inside">
+         
+          <h1 id="city-name">LISBON</h1>
+          <h2 id="date-month-year">MON, 2 MARCH 2021</h2>
+      <h3>
+          <div class="container">
+            <div >
+          <div class="row align-items-center">
+            <div class="col ">
+              <span class="temperature" id="temperature">15</span>
+              <span class="units"><a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+                 <br />
+              <div class="row align-items-center">
+              </div>
+            </div>
+            <div class="col ">
+              <div class="row align-items-center">
+                <div class="col"> HUMIDITY | <span id="humidity">29</span>%</div>  
+      
+                <div class="col"> WIND | <span id="wind">8</span>KM/H</div>
+              </div>
+            </h3>
+  
+
+          <br/><br/><h4>RAINING</h4>
+         
+          <h5 id="time">
+              10:23
+          </h5>
+        
+      
+          
+        </section>
+       
+      <hr/>
+
+      <section class="week">
+        <div class="container">
+      <div class="row row-cols-5">
+        <div class="col ">
+          <strong>TUE</strong><br />
+          <img class="weekdays-icon" src="images/cloud.png">
+          <div class="row row-cols-1">
+            <div class="col">16°C</div>  
+
+            <div class="col">22°C</div>
+          </div>
+        </div>
+        <div class="col ">
+          <strong>WED</strong><br />
+          <img class="weekdays-icon" src="images/cloudy.png">
+          <div class="row row-cols-1">
+            <div class="col">16°C</div>
+
+            <div class="col">22°C</div>
+          </div>
+        </div>
+        <div class="col">
+          <strong>THU</strong><br />
+          <img class="weekdays-icon" src="images/rainy.png">
+          <div class="row row-cols-1">
+            <div class="col">16°C</div>
+
+            <div class="col">22°C</div>
+          </div>
+        </div>
+        <div class="col">
+          <strong>FRI</strong><br />
+          <img class="weekdays-icon" src="images/storm.png">
+          <div class="row row-cols-1">
+            <div class="col">16°C</div>
+
+            <div class="col">22°C</div>
+          </div>
+        </div>
+        <div class="col">
+          <strong>SAT</strong><br />
+          <img class="weekdays-icon" src="images/sun.png">
+          <div class="row row-cols-1">
+            <div class="col">16°C</div>
+
+            <div class="col">22°C</div>
+          </div>
+        </section>
+    </section>
+    <p>Coded by <a class="linkedin" href="https://www.linkedin.com/in/ana-cardoso-dias-4595a5103/" target="_blank">Ana Dias</a> </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+  </html>
+  
