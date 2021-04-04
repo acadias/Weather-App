@@ -25,7 +25,7 @@
         </form>
         <section class="inside">
          
-          <h1 id="city-name">LISBON</h1>
+          <h1 id="city-name">CITY</h1>
           <h2 id="date-month-year">MON, 2 MARCH 2021</h2>
       <h3>
           <div class="container">
@@ -33,7 +33,10 @@
           <div class="row align-items-center">
             <div class="col ">
               <span class="temperature" id="temperature">15</span>
-              <span class="units"><a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+              <span class="units"
+              ><a href="#" id="celsius-link" class="active">C°</a> |
+              <a href="#" id="fahrenheit-link">F°</a></span
+            >
                  <br />
               <div class="row align-items-center">
               </div>
@@ -43,11 +46,16 @@
                 <div class="col"> HUMIDITY | <span id="humidity">29</span>%</div>  
       
                 <div class="col"> WIND | <span id="wind">8</span>KM/H</div>
+          
               </div>
             </h3>
-  
+            <img
+            id="icon"
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+          />
 
-          <br/><br/><h4>RAINING</h4>
+          <h4>RAINING</h4>
          
           <h5 id="time">
               10:23
