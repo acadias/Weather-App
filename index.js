@@ -59,6 +59,31 @@ function search(event) {
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showCurrentTemperature);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col ">
+          <strong class= weather-forecast-date>TUE</strong><br />
+          <img class="weekdays-icon" src="images/cloud.png">
+          <div class="row row-cols-1">
+            <div class="col" class= weather-forecast-temperature-min>16°C</div>  
+
+            <div class="col" class= weather-forecast-temperature-max>22°C</div>
+          </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function showCurrentTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let windElement = document.querySelector("#wind");
