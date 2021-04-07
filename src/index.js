@@ -270,7 +270,7 @@ if (weatherSituation === "Shower Rain") {
     );
 }
 
-document.querySelector("#situation").innerHTML = weatherSituation.toUpperCase();
+document.querySelector("#now").innerHTML = weatherSituation.toUpperCase();
 
 function retrievePosition(position) {
   console.log(position);
