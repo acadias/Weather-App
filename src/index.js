@@ -119,6 +119,7 @@ function showCurrentTemperature(response) {
   getForecast(response.data.coord);
 
   let weatherSituation = response.data.weather[0].description;
+  alert("weather situation");
   if (weatherSituation === "Clear") {
     document.querySelector("#in").setAttribute("src", "img/clear.gif");
     document.querySelector("#background").classList.add("containerclearSky");
