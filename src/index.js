@@ -117,160 +117,166 @@ function showCurrentTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
-}
 
-let weatherSituation = response.data.weather[0].description;
-if (weatherSituation === "Clear") {
-  document.querySelector("#in").setAttribute("src", "img/clear.gif");
-  document.querySelector("#background").classList.add("containerclearSky");
-  document
-    .querySelector("#background")
-    .classList.remove(
-      "containerfewClouds",
-      "containerscatteredClouds",
-      "containerbrokenClouds",
-      "containershowerRain",
-      "containerRain",
-      "containerMist",
-      "containerSnow",
-      "containerThunderstorm"
-    );
-}
-if (weatherSituation === "Few Clouds") {
-  document.querySelector("#in").setAttribute("src", "img/fewclouds.gif");
-  document.querySelector("#background").classList.add("containerfewClouds");
-  document
-    .querySelector("#background")
-    .classList.remove(
-      "containerscatteredClouds",
-      "containerclearSky",
-      "containerbrokenClouds",
-      "containershowerRain",
-      "containerRain",
-      "containerMist",
-      "containerSnow",
-      "containerThunderstorm"
-    );
-}
-if (weatherSituation === "Scattered Clouds") {
-  document.querySelector("#in").setAttribute("src", "img/scatteredclouds.gif");
-  document
-    .querySelector("#background")
-    .classList.add("containerscatteredClouds");
-  document
-    .querySelector("#background")
-    .classList.remove(
-      "containerfewClouds",
-      "containerclearSky",
-      "containerbrokenClouds",
-      "containershowerRain",
-      "containerRain",
-      "containerMist",
-      "containerSnow",
-      "containerThunderstorm"
-    );
-}
+  let weatherSituation = response.data.weather[0].description;
+  if (weatherSituation === "Clear") {
+    document.querySelector("#in").setAttribute("src", "img/clear.gif");
+    document.querySelector("#background").classList.add("containerclearSky");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerfewClouds",
+        "containerscatteredClouds",
+        "containerbrokenClouds",
+        "containershowerRain",
+        "containerRain",
+        "containerMist",
+        "containerSnow",
+        "containerThunderstorm"
+      );
+  }
+  if (weatherSituation === "Few Clouds") {
+    document.querySelector("#in").setAttribute("src", "img/fewclouds.gif");
+    document.querySelector("#background").classList.add("containerfewClouds");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerscatteredClouds",
+        "containerclearSky",
+        "containerbrokenClouds",
+        "containershowerRain",
+        "containerRain",
+        "containerMist",
+        "containerSnow",
+        "containerThunderstorm"
+      );
+  }
+  if (weatherSituation === "Scattered Clouds") {
+    document
+      .querySelector("#in")
+      .setAttribute("src", "img/scatteredclouds.gif");
+    document
+      .querySelector("#background")
+      .classList.add("containerscatteredClouds");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerfewClouds",
+        "containerclearSky",
+        "containerbrokenClouds",
+        "containershowerRain",
+        "containerRain",
+        "containerMist",
+        "containerSnow",
+        "containerThunderstorm"
+      );
+  }
 
-if (weatherSituation === "Broken Clouds") {
-  document.querySelector("#in").setAttribute("src", "img/brokenclouds.gif");
-  document.querySelector("#background").classList.add("containerbrokenClouds");
-  document
-    .querySelector("#background")
-    .classList.remove(
-      "containerfewClouds",
-      "containerscatteredClouds",
-      "containerclearSky",
-      "containershowerRain",
-      "containerRain",
-      "containerMist",
-      "containerSnow",
-      "containerThunderstorm"
-    );
-}
+  if (weatherSituation === "Broken Clouds") {
+    document.querySelector("#in").setAttribute("src", "img/brokenclouds.gif");
+    document
+      .querySelector("#background")
+      .classList.add("containerbrokenClouds");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerfewClouds",
+        "containerscatteredClouds",
+        "containerclearSky",
+        "containershowerRain",
+        "containerRain",
+        "containerMist",
+        "containerSnow",
+        "containerThunderstorm"
+      );
+  }
 
-if (weatherSituation === "Rain") {
-  document.querySelector("in").setAttribute("src", "img/rain.gif");
-  document.querySelector("#background").classList.add("containerRain");
-  document
-    .querySelector("#background")
-    .classList.remove(
-      "containerfewClouds",
-      "containerscatteredClouds",
-      "containerclearSky",
-      "containerbrokenClouds",
-      "containershowerRain",
-      "containerMist",
-      "containerSnow",
-      "containerThunderstorm"
-    );
-}
-if (weatherSituation === "Mist") {
-  document.querySelector("#in").setAttribute("src", "img/mist.gif");
-  document.querySelector("#background").classList.add("containerMist");
-  document
-    .querySelector("#background")
-    .classList.remove(
-      "containerfewClouds",
-      "containerscatteredClouds",
-      "containerclearSky",
-      "containerbrokenClouds",
-      "containershowerRain",
-      "containerRain",
-      "containerSnow",
-      "containerThunderstorm"
-    );
-}
-if (weatherSituation === "Snow") {
-  document.querySelector("#in").setAttribute("src", "img/snow.gif");
-  document.querySelector("#background").classList.add("containerSnow");
-  document
-    .querySelector("#background")
-    .classList.remove(
-      "containerfewClouds",
-      "containerscatteredClouds",
-      "containerclearSky",
-      "containerbrokenClouds",
-      "containershowerRain",
-      "containerRain",
-      "containerMist",
-      "containerThunderstorm"
-    );
-}
-if (weatherSituation === "Thunderstorm") {
-  document.querySelector("#in").setAttribute("src", "img/thunderstorm.gif");
-  document.querySelector("#background").classList.add("containerThunderstorm");
-  document
-    .querySelector("#background")
-    .classList.remove(
-      "containerfewClouds",
-      "containerscatteredClouds",
-      "containerclearSky",
-      "containerbrokenClouds",
-      "containershowerRain",
-      "containerRain",
-      "containerMist",
-      "containerSnow"
-    );
-}
+  if (weatherSituation === "Rain") {
+    document.querySelector("in").setAttribute("src", "img/rain.gif");
+    document.querySelector("#background").classList.add("containerRain");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerfewClouds",
+        "containerscatteredClouds",
+        "containerclearSky",
+        "containerbrokenClouds",
+        "containershowerRain",
+        "containerMist",
+        "containerSnow",
+        "containerThunderstorm"
+      );
+  }
+  if (weatherSituation === "Mist") {
+    document.querySelector("#in").setAttribute("src", "img/mist.gif");
+    document.querySelector("#background").classList.add("containerMist");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerfewClouds",
+        "containerscatteredClouds",
+        "containerclearSky",
+        "containerbrokenClouds",
+        "containershowerRain",
+        "containerRain",
+        "containerSnow",
+        "containerThunderstorm"
+      );
+  }
+  if (weatherSituation === "Snow") {
+    document.querySelector("#in").setAttribute("src", "img/snow.gif");
+    document.querySelector("#background").classList.add("containerSnow");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerfewClouds",
+        "containerscatteredClouds",
+        "containerclearSky",
+        "containerbrokenClouds",
+        "containershowerRain",
+        "containerRain",
+        "containerMist",
+        "containerThunderstorm"
+      );
+  }
+  if (weatherSituation === "Thunderstorm") {
+    document.querySelector("#in").setAttribute("src", "img/thunderstorm.gif");
+    document
+      .querySelector("#background")
+      .classList.add("containerThunderstorm");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerfewClouds",
+        "containerscatteredClouds",
+        "containerclearSky",
+        "containerbrokenClouds",
+        "containershowerRain",
+        "containerRain",
+        "containerMist",
+        "containerSnow"
+      );
+  }
 
-if (weatherSituation === "Shower Rain") {
-  document.querySelector("#in").setAttribute("src", "img/showerain.gif");
-  document.querySelector("#background").classList.add("containershowerRain");
-  document
-    .querySelector("#background")
-    .classList.remove(
-      "containerfewClouds",
-      "containerscatteredClouds",
-      "containerclearSky",
-      "containerbrokenClouds",
-      "containerThunderstorm",
-      "containerRain",
-      "containerMist",
-      "containerSnow"
-    );
-}
+  if (weatherSituation === "Shower Rain") {
+    document.querySelector("#in").setAttribute("src", "img/showerain.gif");
+    document.querySelector("#background").classList.add("containershowerRain");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerfewClouds",
+        "containerscatteredClouds",
+        "containerclearSky",
+        "containerbrokenClouds",
+        "containerThunderstorm",
+        "containerRain",
+        "containerMist",
+        "containerSnow"
+      );
+  }
 
-document.querySelector("#now").innerHTML = weatherSituation.toUpperCase();
+  document.querySelector("#now").innerHTML = weatherSituation.toUpperCase();
+}
 
 function retrievePosition(position) {
   console.log(position);
