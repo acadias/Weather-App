@@ -1,0 +1,207 @@
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  text-shadow: 1px 2px 3px rgb(99 99 99);
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 21px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-shadow: 1px 2px 3px rgb(99 99 99);
+}
+
+h3 {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  text-shadow: 1px 2px 3px rgb(99 99 99);
+  margin-bottom: 2px;
+}
+
+h4,
+h5 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-family: "Barlow Condensed", sans-serif;
+  text-shadow: 1px 2px 3px rgb(99 99 99);
+  text-transform: uppercase;
+}
+
+form {
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+li {
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: capitalize;
+  text-align: center;
+  padding-right: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 15px;
+  text-shadow: 1px 2px 3px rgb(99 99 99);
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  text-shadow: 1px 2px 3px rgb(99 99 99);
+}
+
+hr {
+  color: white;
+}
+
+.outside {
+  background-size: cover;
+  max-width: 100%;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/694/original/3_Few-Clouds.jpg?1617816132);
+  display: block;
+  margin: 5px auto 0px auto;
+  padding: 2% 2%;
+  width: 440px;
+  border: 2px solid rgb(122, 122, 122);
+  border-radius: 15px;
+  box-shadow: 0.5px 2px 2px 2px rgb(99 99 99 / 30%);
+}
+
+.inside {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/693/original/ezgif.com-gif-maker_%283%29.gif?1617816106);
+
+  margin: 0 auto;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #ffffffe3;
+  padding: 45px 50px;
+  border-radius: 50%;
+  margin: 40px 0px;
+  box-shadow: inset 2px 2px 15px black, inset 2px 3px 15px rgba(0, 0, 0, 0.3),
+    inset -2px -3px 25px rgba(102, 102, 102, 0.5);
+  color: rgb(255, 255, 255);
+}
+.weather-forecast {
+  text-align: center;
+  max-width: 100%;
+  color: rgb(255, 255, 255);
+  font-family: "Barlow Condensed", sans-serif;
+  text-shadow: 1px 2px 3px rgb(99 99 99);
+  margin-bottom: 0px;
+}
+.weekdays-icon {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+#temperature {
+  font-size: 50px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+}
+
+.btn {
+  font-size: 14px;
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  opacity: 95%;
+  color: rgb(95, 95, 95);
+}
+
+.links {
+  color: black;
+  text-decoration: underline;
+}
+
+.form-control {
+  max-width: 100%;
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  height: 30px;
+  padding: 5px;
+  font-weight: 400;
+  width: 50%;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bebebe;
+  border-radius: 4px;
+  transition: 0.15s ease-in-out;
+}
+
+.active {
+  font-size: 17px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#icon {
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.containerfewClouds {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/694/original/3_Few-Clouds.jpg?1617816132);
+}
+
+.containerscatteredClouds {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/666/original/2_Scattered-Clouds.jpg?1617740957);
+}
+
+.containerclearSky {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/663/original/1_Clear-Sky.jpg?1617740728);
+}
+
+.containerbrokenClouds {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/695/original/4_Broken-Clouds.jpg?1617816349);
+}
+
+.containershowerRain {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/698/original/5_Shower-Rain.jpg?1617816493);
+}
+
+.containerRain {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/699/original/6_Rain.jpg?1617816546);
+}
+
+.containerMist {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/701/original/7_Mist.jpg?1617816623);
+}
+
+.containerSnow {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/703/original/8_Snow.jpg?1617816748);
+}
+
+.containerThunderstorm {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/705/original/9_ThunderStorm.jpg?1617816968);
+}

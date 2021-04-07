@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;600&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <section class="outside">
+      <section class="outside containerfewClouds containerscatteredClouds containerclearSky containerbrokenClouds containerShower containerRain containerMist  containerSnow containerThunderstorm" id="background">
         <form  id="search-form">
           <div class="mb-3">
             <input class="form-control"  type="text"  id="write-city" placeholder="CITY" />
@@ -23,7 +23,7 @@
             <input type="submit" class="btn" id="current-location" value="CURRENT LOCATION" />
           </div>
         </form>
-        <section class="inside">
+        <section class="inside" id="in">
          
           <h1 id="city-name">LISBON</h1>
           <h2 id="date-month-year">MON, 2 MARCH 2021</h2>
@@ -55,7 +55,7 @@
             alt=""
           />
 
-          <h4>RAINING</h4>
+          <h4 id="now">RAINING</h4>
          
           <h5 id="time">
               10:23
@@ -116,7 +116,7 @@
     </section>
     <p>Coded by <a class="links" href="https://www.linkedin.com/in/ana-cardoso-dias-4595a5103/" target="_blank">Ana Dias</a> and is open-sourced on <a class="links" href="https://github.com/acadias/Weather-App" target="_blank">GitHub</a> and hosted on <a class="links" href="https://app.netlify.com/teams/acadias/overview"  target="_blank">Netlify</a> </p> 
     </div>
-    <script src="index.js"></script>
+    <script src="src/index.js"></script>
   </body>
   </html>
   
