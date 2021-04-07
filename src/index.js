@@ -121,6 +121,7 @@ function showCurrentTemperature(response) {
   let weatherSituation = response.data.weather[0].description;
   alert("weather situation");
   if (weatherSituation === "Clear") {
+    alert("weather situation");
     document.querySelector("#in").setAttribute("src", "img/clear.gif");
     document.querySelector("#background").classList.add("containerclearSky");
     document
@@ -133,7 +134,8 @@ function showCurrentTemperature(response) {
         "containerRain",
         "containerMist",
         "containerSnow",
-        "containerThunderstorm"
+        "containerThunderstorm",
+        "outside"
       );
   }
   if (weatherSituation === "Few Clouds") {
@@ -149,7 +151,8 @@ function showCurrentTemperature(response) {
         "containerRain",
         "containerMist",
         "containerSnow",
-        "containerThunderstorm"
+        "containerThunderstorm",
+        "outside"
       );
   }
   if (weatherSituation === "Scattered Clouds") {
@@ -169,7 +172,8 @@ function showCurrentTemperature(response) {
         "containerRain",
         "containerMist",
         "containerSnow",
-        "containerThunderstorm"
+        "containerThunderstorm",
+        "outside"
       );
   }
 
@@ -188,7 +192,8 @@ function showCurrentTemperature(response) {
         "containerRain",
         "containerMist",
         "containerSnow",
-        "containerThunderstorm"
+        "containerThunderstorm",
+        "outside"
       );
   }
 
@@ -205,7 +210,8 @@ function showCurrentTemperature(response) {
         "containershowerRain",
         "containerMist",
         "containerSnow",
-        "containerThunderstorm"
+        "containerThunderstorm",
+        "outside"
       );
   }
   if (weatherSituation === "Mist") {
@@ -221,7 +227,8 @@ function showCurrentTemperature(response) {
         "containershowerRain",
         "containerRain",
         "containerSnow",
-        "containerThunderstorm"
+        "containerThunderstorm",
+        "outside"
       );
   }
   if (weatherSituation === "Snow") {
@@ -237,7 +244,8 @@ function showCurrentTemperature(response) {
         "containershowerRain",
         "containerRain",
         "containerMist",
-        "containerThunderstorm"
+        "containerThunderstorm",
+        "outside"
       );
   }
   if (weatherSituation === "Thunderstorm") {
@@ -255,7 +263,8 @@ function showCurrentTemperature(response) {
         "containershowerRain",
         "containerRain",
         "containerMist",
-        "containerSnow"
+        "containerSnow",
+        "outside"
       );
   }
 
@@ -272,7 +281,8 @@ function showCurrentTemperature(response) {
         "containerThunderstorm",
         "containerRain",
         "containerMist",
-        "containerSnow"
+        "containerSnow",
+        "outside"
       );
   }
 
