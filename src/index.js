@@ -58,8 +58,12 @@ function search(event) {
   h1.innerHTML = `${city.value}`;
   let apiKey = "d0e932fc6acbbe94467003adf5e15de0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(showCurrentTemperature);
+  axios
+    .get(`${apiUrl}&appid=${apiKey}`)
+    .then(showCurrentTemperature)
+    .catch(() => alert("wrong city"));
 }
+
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -119,9 +123,7 @@ function showCurrentTemperature(response) {
   getForecast(response.data.coord);
 
   let weatherSituation = response.data.weather[0].description;
-  alert("weather situation");
   if (weatherSituation === "Clear") {
-    alert("weather situation");
     document.querySelector("#in").setAttribute("src", "img/clear.gif");
     document.querySelector("#background").classList.add("containerclearSky");
     document
@@ -286,7 +288,7 @@ function showCurrentTemperature(response) {
       );
   }
 
-  document.querySelector("#now").innerHTML = weatherSituation.toUpperCase();
+  document.querySelector("#now").innerHTML = weatherSituation();
 }
 
 function retrievePosition(position) {
