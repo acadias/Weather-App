@@ -68,7 +68,6 @@ a {
 p {
   text-align: center;
   font-family: "Barlow Condensed", sans-serif;
-  text-shadow: 1px 2px 3px rgb(99 99 99);
 }
 
 hr {
@@ -89,7 +88,7 @@ hr {
 }
 
 .inside {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/693/original/ezgif.com-gif-maker_%283%29.gif?1617816106);
+  background-color: #e4e4e4;
 
   margin: 0 auto;
   width: 100%;
@@ -97,7 +96,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   border: 3px solid #ffffffe3;
-  padding: 50px 50px;
+  padding: 37px 50px;
   border-radius: 50%;
   margin: 40px 0px;
   box-shadow: inset 2px 2px 15px black, inset 2px 3px 15px rgba(0, 0, 0, 0.3),
@@ -170,24 +169,12 @@ hr {
   text-align: center;
 }
 
-.containerfewClouds {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/694/original/3_Few-Clouds.jpg?1617816132);
-}
-
-.containerscatteredClouds {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/666/original/2_Scattered-Clouds.jpg?1617740957);
-}
-
 .containerclearSky {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/663/original/1_Clear-Sky.jpg?1617740728);
 }
 
-.containerbrokenClouds {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/695/original/4_Broken-Clouds.jpg?1617816349);
-}
-
-.containershowerRain {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/698/original/5_Shower-Rain.jpg?1617816493);
+.containerClouds {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/694/original/3_Few-Clouds.jpg?1617816132);
 }
 
 .containerRain {
@@ -204,4 +191,28 @@ hr {
 
 .containerThunderstorm {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/705/original/9_ThunderStorm.jpg?1617816968);
+}
+
+.containerDrizzle {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/698/original/5_Shower-Rain.jpg?1617816493);
+}
+
+.containersandDust {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/695/original/4_Broken-Clouds.jpg?1617816349);
+}
+
+.containerTornado {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/666/original/2_Scattered-Clouds.jpg?1617740957);
+}
+
+#background {
+  background-size: cover;
+  max-width: 100%;
+  display: block;
+  margin: 5px auto 0px auto;
+  padding: 2% 2%;
+  width: 440px;
+  border: 2px solid rgb(122, 122, 122);
+  border-radius: 15px;
+  box-shadow: 0.5px 2px 2px 2px rgb(99 99 99 / 30%);
 }
