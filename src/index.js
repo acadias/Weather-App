@@ -1,3 +1,5 @@
+//-------TIME AND DATE----------//
+
 function currentDate(timestamp) {
   let now = new Date(timestamp);
   let date = now.getDate();
@@ -51,6 +53,11 @@ function formatDay(timestamp) {
   let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   return days[date.getDay()];
 }
+
+//--------------------------------------------------------//
+
+//-------CITY SEARCH----------//
+
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#write-city");
@@ -60,6 +67,10 @@ function search(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showCurrentTemperature);
 }
+
+//--------------------------------------------------------//
+
+//-------DISPLAY FORECAST----------//
 
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -99,6 +110,11 @@ function getForecast(coordinates) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
+//--------------------------------------------------------//
+
+//------CHANGE CITY AND TEMPERATURE----------//
+// -->Displays weather, humidity, wind, icon, backgrounds etc.
+
 function showCurrentTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let windElement = document.querySelector("#wind");
@@ -333,6 +349,10 @@ function showCurrentTemperature(response) {
   }
 }
 
+//--------------------------------------------------------//
+
+// --- CURRENT LOCATION ---------//
+
 function retrievePosition(position) {
   console.log(position);
   let latitude = position.coords.latitude;
@@ -346,6 +366,11 @@ function getPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(retrievePosition);
 }
+
+//--------------------------------------------------------//
+
+//-----UNIT CONVERSION-----//
+
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -369,5 +394,7 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+//--------------------------------------------------------//
 
 form.addEventListener("submit", search);
