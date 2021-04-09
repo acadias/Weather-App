@@ -134,7 +134,9 @@ function showCurrentTemperature(response) {
         "containerSnow",
         "containerThunderstorm",
         "containersandDust",
-        "containerTornado"
+        "containerTornado",
+        "containerashSmoke",
+        "containerNull"
       );
   } else if (weatherSituation === "Clouds") {
     document.querySelector("#in").style.backgroundImage =
@@ -150,7 +152,10 @@ function showCurrentTemperature(response) {
         "containerSnow",
         "containerThunderstorm",
         "containersandDust",
-        "containerTornado"
+        "containerTornado",
+        "containerashSmoke",
+        "containerSquall",
+        "containerNull"
       );
   } else if (weatherSituation === "Rain") {
     document.querySelector("#in").style.backgroundImage =
@@ -166,7 +171,10 @@ function showCurrentTemperature(response) {
         "containerSnow",
         "containerThunderstorm",
         "containersandDust",
-        "containerTornado"
+        "containerTornado",
+        "containerashSmoke",
+        "containerSquall",
+        "containerNull"
       );
   } else if (
     weatherSituation === "Mist" ||
@@ -186,7 +194,10 @@ function showCurrentTemperature(response) {
         "containerSnow",
         "containerThunderstorm",
         "containersandDust",
-        "containerTornado"
+        "containerTornado",
+        "containerashSmoke",
+        "containerSquall",
+        "containerNull"
       );
   } else if (weatherSituation === "Snow") {
     document.querySelector("#in").style.backgroundImage =
@@ -202,7 +213,10 @@ function showCurrentTemperature(response) {
         "containerMist",
         "containerThunderstorm",
         "containersandDust",
-        "containerTornado"
+        "containerTornado",
+        "containerashSmoke",
+        "containerSquall",
+        "containerNull"
       );
   } else if (weatherSituation === "Thunderstorm") {
     document.querySelector("#in").style.backgroundImage =
@@ -220,7 +234,10 @@ function showCurrentTemperature(response) {
         "containerMist",
         "containerSnow",
         "containersandDust",
-        "containerTornado"
+        "containerTornado",
+        "containerashSmoke",
+        "containerSquall",
+        "containerNull"
       );
   } else if (weatherSituation === "Drizzle") {
     document.querySelector("#in").style.backgroundImage =
@@ -236,7 +253,10 @@ function showCurrentTemperature(response) {
         "containerMist",
         "containerSnow",
         "containersandDust",
-        "containerTornado"
+        "containerTornado",
+        "containerashSmoke",
+        "containerSquall",
+        "containerNull"
       );
   } else if (weatherSituation === "Sand" || weatherSituation === "Dust") {
     document.querySelector("#in").style.backgroundImage =
@@ -251,7 +271,10 @@ function showCurrentTemperature(response) {
         "containerRain",
         "containerMist",
         "containerSnow",
-        "containerTornado"
+        "containerTornado",
+        "containerashSmoke",
+        "containerSquall",
+        "containerNull"
       );
   } else if (weatherSituation === "Tornado") {
     document.querySelector("#in").style.backgroundImage =
@@ -266,7 +289,46 @@ function showCurrentTemperature(response) {
         "containerRain",
         "containerMist",
         "containerSnow",
-        "containersandDust"
+        "containersandDust",
+        "containerashSmoke",
+        "containerSquall",
+        "containerNull"
+      );
+  } else if (weatherSituation === "Ash" || weatherSituation === "Smoke") {
+    document.querySelector("#in").style.backgroundImage =
+      "url('./src/img/smoke.gif')";
+    document.querySelector("#background").classList.add("containerashSmoke");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerClouds",
+        "containerclearSky",
+        "containerThunderstorm",
+        "containerRain",
+        "containerMist",
+        "containerSnow",
+        "containersandDust",
+        "containerTornado",
+        "containerSquall",
+        "containerNull"
+      );
+  } else if (weatherSituation === "Squall") {
+    document.querySelector("#in").style.backgroundImage =
+      "url('./src/img/squall.gif')";
+    document.querySelector("#background").classList.add("containerSquall");
+    document
+      .querySelector("#background")
+      .classList.remove(
+        "containerClouds",
+        "containerclearSky",
+        "containerThunderstorm",
+        "containerRain",
+        "containerMist",
+        "containerSnow",
+        "containersandDust",
+        "containerTornado",
+        "containerashSmoke",
+        "containerNull"
       );
   }
 }
