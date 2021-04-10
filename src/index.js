@@ -61,8 +61,6 @@ function formatDay(timestamp) {
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#write-city");
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = `${city.value}`;
   let apiKey = "d0e932fc6acbbe94467003adf5e15de0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showCurrentTemperature);
@@ -118,7 +116,7 @@ function getForecast(coordinates) {
 function showCurrentTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let windElement = document.querySelector("#wind");
-  let humidityElement = document.querySelector("#humidity");
+  let humidityElement = document.querySelector("#hum");
   let descriptionElement = document.querySelector("h4");
   let h1 = document.querySelector("h1");
   let iconElement = document.querySelector("#icon");
@@ -126,7 +124,7 @@ function showCurrentTemperature(response) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   descriptionElement.innerHTML = response.data.weather[0].description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  humidityElement = response.data.main.humidity;
+  humidityElement.innerHTML = response.data.main.humidity;
   h1.innerHTML = response.data.name;
   iconElement.setAttribute(
     "src",
