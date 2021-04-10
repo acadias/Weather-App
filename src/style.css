@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/844/original/WhatsApp_Image_2021-04-09_at_16.03.30.jpeg?1617981187);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/907/original/WhatsApp_Image_2021-04-10_at_14.25.15.jpeg?1618061219);
 }
 
 h1 {
@@ -73,6 +73,8 @@ p {
 
 hr {
   color: white;
+  border: none;
+  border-top: 2px double rgb(180, 180, 180);
 }
 
 .inside {
@@ -164,19 +166,19 @@ hr {
 }
 
 .containerClouds {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/694/original/3_Few-Clouds.jpg?1617816132);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/899/original/3_Few-Clouds.jpg?1618060573);
 }
 
 .containerRain {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/699/original/6_Rain.jpg?1617816546);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/902/original/6_Rain.jpg?1618060660);
 }
 
 .containerMist {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/701/original/7_Mist.jpg?1617816623);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/903/original/7_Mist.jpg?1618060684);
 }
 
 .containerSnow {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/703/original/8_Snow.jpg?1617816748);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/905/original/8_Snow.jpg?1618060702);
 }
 
 .containerThunderstorm {
@@ -184,11 +186,11 @@ hr {
 }
 
 .containerDrizzle {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/698/original/5_Shower-Rain.jpg?1617816493);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/901/original/5_Shower-Rain.jpg?1618060633);
 }
 
 .containersandDust {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/695/original/4_Broken-Clouds.jpg?1617816349);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/900/original/4_Broken-Clouds.jpg?1618060589);
 }
 
 .containerTornado {
@@ -204,7 +206,7 @@ hr {
 }
 
 .containerNull {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/840/original/WhatsApp_Image_2021-04-09_at_15.57.54.jpeg?1617980655);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/906/original/0_App.jpg?1618060717);
 }
 
 #background {
