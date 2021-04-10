@@ -80,7 +80,7 @@ hr {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/839/original/WhatsApp_Image_2021-04-09_at_15.58.09.jpeg?1617980547);
 
   margin: 0 auto;
-
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
