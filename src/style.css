@@ -35,8 +35,7 @@ h5 {
   font-size: 30px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   font-weight: 400;
   font-family: "Barlow Condensed", sans-serif;
   text-shadow: 1px 2px 3px rgb(99 99 99);
@@ -69,23 +68,11 @@ a {
 p {
   text-align: center;
   font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 20px;
 }
 
 hr {
   color: white;
-}
-
-.outside {
-  background-size: cover;
-  max-width: 100%;
-  background-image: url();
-  display: block;
-  margin: 5px auto 0px auto;
-  padding: 2% 2%;
-  width: 440px;
-  border: 0px solid rgb(122, 122, 122);
-  border-radius: 15px;
-  box-shadow: 0.5px 2px 2px 2px rgb(99 99 99 / 30%);
 }
 
 .inside {
@@ -224,10 +211,10 @@ hr {
   background-size: cover;
   max-width: 100%;
   display: block;
-  margin: 5px auto 0px auto;
+  margin: 0px auto;
+  margin-top: 20px;
   padding: 2% 2%;
   width: 440px;
-  border: 2px solid rgb(122, 122, 122);
   border-radius: 15px;
   box-shadow: 0.5px 2px 2px 2px rgb(99 99 99 / 30%);
 }

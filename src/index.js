@@ -274,7 +274,7 @@ function showCurrentTemperature(response) {
       );
   } else if (weatherSituation === "Sand" || weatherSituation === "Dust") {
     document.querySelector("#in").style.backgroundImage =
-      "url('./src/img/showerain.gif')";
+      "url('./src/img/sand.gif')";
     document.querySelector("#background").classList.add("containersandDust");
     document
       .querySelector("#background")
